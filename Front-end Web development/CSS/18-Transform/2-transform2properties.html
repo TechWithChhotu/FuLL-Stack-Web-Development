@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scale and skew</title>
+    <!-- =========================================================================
+    What is transform?
+        The transform CSS property lets you rotate, scale, skew, or translate an 
+        element. It modifies the coordinate space of the CSS visual formatting model.
+         =========================================================================-->
+    <style>
+      div {
+        margin: 50px;
+      }
+      #div1,
+      #div2 {
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
+        text-align: center;
+
+        background-color: lightblue;
+        border: 4px solid #0640ee;
+      }
+      #div1:hover {
+        /* transform: scale(x-axis, y-axis); */
+        transform: scale(2, 1.5);
+        /* transform: scaleX(2); */
+        /* transform: scaley(1.5); */
+      }
+      #div2:hover {
+        /* transform: skew(x-axis, y-axis); */
+        transform: skew(30deg, 20deg);
+        /* transform: skewX(30deg); */
+        /* transform: skewY(20deg); */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">Hello</div>
+    <div id="div2">Wow</div>
+  </body>
+</html>

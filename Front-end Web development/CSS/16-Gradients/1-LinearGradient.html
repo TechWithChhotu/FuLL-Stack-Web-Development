@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinearGradients</title>
+    <style>
+      div {
+        display: inline-block;
+      }
+
+      #linearG {
+        height: 200px;
+        width: 200px;
+        /* background-image: linea-gradient(color-stop1,color-stop-2,....) */
+        /* or */
+        /* background-image: linea-gradient(direction,color-stop1,color-stop-2,....) */
+        background-image: linear-gradient(red, yellow);
+        border: 2px solid rgb(81, 0, 255);
+      }
+
+      #linearG2 {
+        height: 200px;
+        width: 200px;
+        background-image: linear-gradient(to top, red, yellow);
+        border: 2px solid rgb(81, 0, 255);
+      }
+
+      #linearG3 {
+        height: 200px;
+        width: 200px;
+        background-image: linear-gradient(to left, red, black, yellow);
+        border: 2px solid rgb(81, 0, 255);
+      }
+
+      #linearG4 {
+        height: 200px;
+        width: 200px;
+
+        background-image: linear-gradient(to top, red, rgb(255, 0, 119));
+        border: 2px solid rgb(81, 0, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="linearG"></div>
+    <div id="linearG2"></div>
+    <div id="linearG3"></div>
+    <div id="linearG4"></div>
+  </body>
+</html>

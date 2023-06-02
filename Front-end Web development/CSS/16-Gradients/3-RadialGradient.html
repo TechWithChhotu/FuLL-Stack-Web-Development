@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RadialGradient</title>
+    <style>
+      div {
+        display: inline-block;
+      }
+      #RG1 {
+        /* background-image: radial-gradient(color,color,...); */
+        /* or */
+        /* background-image: radial-gradient(shapeName,color,color,...); */
+        /* or */
+
+        /* background-image: radial-gradient(shapeName,color area,color area,...); */
+
+        background-image: radial-gradient(rgb(253, 5, 195), blue);
+        height: 400px;
+        width: 200px;
+        border: 2px solid palegreen;
+      }
+
+      #RG2 {
+        /* background-image: radial-gradient(color,color,...); */
+        /* or */
+        /* background-image: radial-gradient(shapeName,color,color,...); */
+        /* or */
+
+        /* background-image: radial-gradient(shapeName,color area,color area,...); */
+
+        background-image: radial-gradient(circle, rgb(253, 5, 195), blue);
+        height: 400px;
+        width: 200px;
+      }
+      #RG3 {
+        /* background-image: radial-gradient(color,color,...); */
+        /* or */
+        /* background-image: radial-gradient(shapeName,color,color,...); */
+        /* or */
+
+        /* background-image: radial-gradient(shapeName,color area,color area,...); */
+        background-image: radial-gradient(
+          circle,
+          rgb(253, 5, 195) 10%,
+          blue 11%,
+          palegreen 30%,
+          red 10%
+        );
+        height: 400px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="RG1"></div>
+    <div id="RG2"></div>
+    <div id="RG3"></div>
+  </body>
+</html>

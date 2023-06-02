@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PseudoClass</title>
+    <!-- ===========================
+           mostly used pseudo class selectors:-
+           ~    hover
+           ~    focus
+           ~    link
+           ~    visited
+           ~    active
+           ~    first-child
+           ~    nth-child()
+         ==========================-->
+    <style>
+      /* ==================== 
+               Notes Styles
+           ====================*/
+      .Notes {
+        display: flex;
+        justify-content: center;
+      }
+      .Notes button {
+        border: 2px solid #f305af;
+        border-radius: 5px;
+        /* text-align: center; */
+      }
+      .Notes button a {
+        text-decoration: none;
+        margin: 15px;
+      }
+      .Notes:hover {
+        background-color: lightgreen;
+      }
+      .Notes button:hover {
+        background-color: lightblue;
+      }
+
+      /* hover */
+      #Google {
+        text-decoration: none;
+        color: #f305af;
+      }
+      #Google:hover {
+        font-size: 25px;
+        color: blueviolet;
+      }
+
+      /* active */
+      #Google:active {
+        color: aquamarine;
+      }
+
+      /* visited */
+      #PW:visited {
+        font-size: 16px;
+        color: #d8f80d;
+      }
+
+      /* focus */
+      #Name:focus {
+        color: #f305af;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      /*first-child */
+      div p:first-child {
+        color: #05d3f3;
+      }
+
+      /* nth-child*/
+      div p:nth-child(3) {
+        color: blue;
+      }
+
+      #LINK:link {
+        color: #05d3f3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- over,active -->
+    <a id="Google" href="https://www.google.com">Google</a>
+    <br />
+    <hr />
+
+    <!-- visited -->
+    <a href="https://www.pwskills.com" id="PW">PWSKILLS</a>
+
+    <!-- focus -->
+    <br />
+    <hr />
+    <label for="NameT">Enter your Name: </label>
+    <input type="text" id="NameT" />
+    <br />
+    <br />
+    <label for="Name">Enter your Name: </label>
+    <input type="text" id="Name" />
+
+    <!-- first-child and nth-child -->
+    <div>
+      <p>paragraph 1</p>
+      <p>paragraph 2</p>
+      <p>paragraph 3</p>
+      <p>paragraph 4</p>
+    </div>
+
+    <p id="LINK">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+      accusamus!
+    </p>
+    <!-- =====================
+         Notes Structure 
+      =====================-->
+    <br />
+    <br />
+    <!-- <hr /> -->
+    <div class="Notes">
+      <button>
+        <a
+          href="https://drive.google.com/file/d/1Z4-beiRCb3lOEV-QDV0tLb8xE6jIFzR3/view"
+          target="_blank"
+          >Click Here to Open Notes</a
+        >
+      </button>
+    </div>
+  </body>
+</html>

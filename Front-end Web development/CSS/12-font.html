@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>font</title>
+    <style>
+      p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 25px;
+        font-variant: small-caps;
+        font-weight: 900;
+        /* ======================================================== 
+        font-family: this feature can change the font style or face
+        font-size: it is possible to change the font size with this feature
+        font-variant: small-caps effect is produced by this feature of the css font variant.
+        font-weight: this attribute is used to modify the font boldness and lightness.
+           ========================================================*/
+      }
+
+      /* ==================== 
+             Notes Styles
+         ====================*/
+      .Notes {
+        display: flex;
+        justify-content: center;
+      }
+      .Notes button {
+        border: 2px solid #f305af;
+        border-radius: 5px;
+        /* text-align: center; */
+      }
+      .Notes button a {
+        text-decoration: none;
+        margin: 15px;
+      }
+      .Notes:hover {
+        background-color: lightgreen;
+      }
+      .Notes button:hover {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, corrupti!
+    </p>
+
+    <!-- =====================
+             Notes Structure 
+          =====================-->
+    <div class="Notes">
+      <button>
+        <a
+          href="https://drive.google.com/file/d/11-we_HOiRF5E2UPyRIZ7K6TOMSZVFZNp/view"
+          target="_blank"
+          >Click Here to Open Notes</a
+        >
+      </button>
+    </div>
+  </body>
+</html>

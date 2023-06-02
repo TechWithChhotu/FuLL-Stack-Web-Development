@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StandardMediaQueries</title>
+    <style>
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        div::after {
+          content: "Extra small devices";
+          color: black;
+          font-size: 20px;
+          text-align: center;
+        }
+        body {
+          background-color: lightsalmon;
+        }
+      }
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px) {
+        div::after {
+          content: "portrait tablets and large phones";
+          color: black;
+          font-size: 20px;
+          text-align: center;
+        }
+        body {
+          background-color: lime;
+        }
+      }
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+        div::after {
+          content: "landscape tabletss";
+          color: black;
+          font-size: 20px;
+          text-align: center;
+        }
+        body {
+          background-color: lightpink;
+        }
+      }
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {
+        div::after {
+          content: "laptops/desktops";
+          color: black;
+          font-size: 20px;
+          text-align: center;
+        }
+        body {
+          background-color: lightgreen;
+        }
+      }
+
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1200px) {
+        div::after {
+          content: "large laptops/desktops";
+          color: black;
+          font-size: 20px;
+          text-align: center;
+        }
+        body {
+          background-color: lightcoral;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

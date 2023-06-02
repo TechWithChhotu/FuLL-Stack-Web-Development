@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      /* ======================================================== 
+        Transition: CSS transitions allow you to change property 
+                    values smoothly, over a given duration.
+           ========================================================*/
+      div {
+        display: inline-block;
+      }
+      #Trans {
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+
+        line-height: 200px;
+        text-align: center;
+        /* transition: height 2s, width 2s, line-height 2s; */
+        /* line no. 23 and 25 both are work same */
+        /* transition: 2s; */
+
+        transition-delay: 1s;
+
+        /* ======================================================== 
+                write transition properties saperately 
+           ========================================================*/
+        transition-property: height, width, line-height;
+        transition-duration: 2s, 2s, 2s;
+      }
+      #Trans:hover {
+        height: 400px;
+        width: 400px;
+        line-height: 400px;
+      }
+      #div2:hover {
+        height: 400px;
+        width: 400px;
+        line-height: 400px;
+      }
+      #div2 {
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+        right: 0;
+        line-height: 200px;
+        text-align: center;
+      }
+
+      /* ==================== 
+             Notes Styles
+         ====================*/
+      .Notes {
+        display: flex;
+        justify-content: center;
+      }
+      .Notes button {
+        border: 2px solid #f305af;
+        border-radius: 5px;
+        /* text-align: center; */
+      }
+      .Notes button a {
+        text-decoration: none;
+        margin: 15px;
+      }
+      .Notes:hover {
+        background-color: lightgreen;
+      }
+      .Notes button:hover {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Trans">With-Transition</div>
+    <div id="div2">Without-Transition</div>
+    <br />
+
+    <!-- ============================
+           Tooltip using title attributes
+         ============================-->
+    <a href="https://www.google.com" title="https://www.google.com">Google</a>
+    <a href="https://www.pwskills.com" title="https://www.pwskills.com"
+      >PWSkills</a
+    >
+
+    <!-- =====================
+             Notes Structure 
+          =====================-->
+    <div class="Notes" title="it`s Nodes link">
+      <button>
+        <a
+          href="https://drive.google.com/file/d/1XW6DYRvt_8g5QrX8qP73NyJhF-xnjvjg/view"
+          target="_blank"
+          >Click Here to Open Notes</a
+        >
+      </button>
+    </div>
+  </body>
+</html>

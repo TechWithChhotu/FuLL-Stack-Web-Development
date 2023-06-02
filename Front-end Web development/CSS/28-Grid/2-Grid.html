@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid | 2</title>
+    <style>
+      /* ======================================================== 
+        grid-column-start grid-column-end, grid-row-start grid-row-end
+
+        grid-column-start and grid-column-end properties are used to specify the
+        starting and ending of an grid-item along the horizontal (x) axis.
+
+        grid-row-start and grid-row-end properties in CSS are used to specify 
+        the starting and ending of an grid-item along the vertical (y) axis.
+        ========================================================*/
+      .Container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(10, 100px);
+        gap: 10px;
+      }
+
+      .box1 {
+        background-color: rgb(249, 2, 199);
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .box2 {
+        background-color: rgb(17, 0, 255);
+      }
+      .box3 {
+        background-color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container">
+      <div class="box1">grid-column-start: 1; grid-column-end: 3;</div>
+      <div class="box2">box-2</div>
+      <div class="box3">box-3</div>
+      <div class="box1">box-4</div>
+      <div class="box2">box-5</div>
+      <div class="box3">box-6</div>
+      <div class="box1">box-7</div>
+      <div class="box2">box-8</div>
+      <div class="box3">box-9</div>
+    </div>
+  </body>
+</html>

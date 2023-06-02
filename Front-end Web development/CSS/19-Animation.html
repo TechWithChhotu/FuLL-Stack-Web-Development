@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <!-- ==================================================================
+           What are CSS Animations?
+            An animation lets an element gradually change from one style to another.
+            You can change as many CSS properties you want, as many times as you want.
+            To use CSS animation, you must first specify some keyframes for the animation.
+            Keyframes hold what styles the element will have at certain times.
+          =================================================================-->
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: cyan;
+        line-height: 100px;
+        text-align: center;
+        border: 2px solid rgb(250, 7, 7);
+        border-radius: 50%;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation-name: Moving;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes Moving {
+        to {
+          transform: translateX(1px);
+        }
+        from {
+          transform: translateX(900px);
+        }
+      }
+
+      /* ==================== 
+             Notes Styles
+         ====================*/
+      .Notes {
+        display: flex;
+        justify-content: center;
+      }
+      .Notes button {
+        border: 2px solid #f305af;
+        border-radius: 5px;
+        /* text-align: center; */
+      }
+      .Notes button a {
+        text-decoration: none;
+        margin: 15px;
+      }
+      .Notes:hover {
+        background-color: lightgreen;
+      }
+      .Notes button:hover {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Hello</div>
+    <!-- =====================
+             Notes Structure 
+          =====================-->
+    <div class="Notes">
+      <button>
+        <a
+          href="https://drive.google.com/file/d/1RqV1m_I64lJPBAPdV5eYhpIU_ohfrAK_/view"
+          target="_blank"
+          >Click Here to Open Notes</a
+        >
+      </button>
+    </div>
+  </body>
+</html>

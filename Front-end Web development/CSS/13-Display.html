@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      /* ======================================================== 
+        ● The display property specifies the display behavior 
+        (the type of rendering box) of an element.
+        ● In HTML, the default display property value is taken from the 
+        HTML specifications or from the browser/user default style sheet.
+         The default value in XML is inline, including SVG elements.
+           ========================================================*/
+
+      .first {
+        border: 2px solid red;
+      }
+
+      .second {
+        border: 2px solid rgb(0, 89, 255);
+        display: inline;
+      }
+      .three {
+        border: 2px solid rgb(208, 0, 255);
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="first">Lorem ipsum dolor</p>
+    <p class="first">
+      Lorem ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Saepe, qui!dolor
+    </p>
+
+    <p class="second">Lorem ipsum dolor lo sit.</p>
+    <p class="second">
+      Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Culpa, voluptatibus? dolor lo sit.
+    </p>
+
+    <p class="three">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, molestias!
+    </p>
+    <p class="three">Lorem ipsum dolor sit amet lestias!</p>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow&z-index</title>
+    <style>
+      p {
+        display: inline-block;
+        margin: 20px;
+        height: 400px;
+        width: 350px;
+        border: 4px solid rgb(7, 11, 251);
+      }
+      P::first-line {
+        background-color: aquamarine;
+        font-size: 25px;
+        font-weight: 800;
+        color: blue;
+      }
+      #Hidden {
+        overflow: hidden;
+      }
+      #Scroll {
+        overflow: scroll;
+      }
+      #Auto {
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="Hidden">
+      Overflow:hidden <br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nihil
+      quam temporibus id ut? Pariatur a debitis odit officia tempore tenetur,
+      sint iusto voluptatem nostrum dicta provident! Veritatis reprehenderit
+      officiis laboriosam aspernatur! Dolorum rerum voluptas debitis tempore eos
+      corrupti! Quos quasi laborum sed atque libero accusamus! Modi quae
+      assumenda consequatur est deleniti, ipsum optio, sequi aperiam
+      consequuntur delectus blanditiis fugit unde labore expedita fuga
+      repellendus minus omnis praesentium? Voluptatibus, est voluptate dolorem
+      accusamus animi aspernatur eum consequuntur fugiat officiis nulla!
+      Accusantium similique placeat vel adipisci temporibus natus exercitationem
+      labore? Magnam eveniet id dolor ipsam obcaecati inventore quas temporibus.
+      Dolore aut vero enim amet nisi fugit quas asperiores porro doloremque
+      maiores inventore temporibus laborum molestiae minima impedit, illum id ab
+      vitae? Ratione rem eius quis aliquam, hic quas officiis porro
+      reprehenderit qui magni molestias provident nisi dolor, sunt alias
+      dignissimos excepturi recusandae illum, in eaque cumque id quod. Eligendi
+      illum adipisci tenetur, non minima quas blanditiis sed suscipit aliquam
+      tempora! Sed nulla voluptates distinctio quisquam est tenetur optio natus
+      aut! Autem vitae libero qui animi sapiente, doloremque eius eveniet fugit
+      explicabo nesciunt assumenda sunt eaque numquam repellat quae, ipsa ullam
+      nostrum cum aliquam asperiores voluptatum laborum? Commodi ex enim eveniet
+      ab? Quod numquam, suscipit quas provident nobis magnam sit, repellat,
+      alias animi culpa quisquam minus totam nisi nihil inventore voluptate
+      possimus excepturi dicta architecto! Cumque rerum beatae eaque nesciunt
+      quibusdam culpa soluta harum illo nemo et? Commodi rem illum deserunt ab
+      quisquam quia possimus similique explicabo officia magni? Voluptate
+      voluptates rerum doloribus nulla omnis pariatur inventore provident
+      commodi eligendi, dolore repellendus aut sunt quo rem exercitationem
+      officia qui error fuga sit officiis sint? Omnis rem dolore fugit nihil
+      asperiores qui consectetur pariatur, repellendus veniam accusantium
+      voluptates temporibus ducimus cupiditate architecto quod! Dolor sunt,
+    </p>
+
+    <p id="Scroll">
+      Overflow:Scroll <br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nihil
+      quam temporibus id ut? Pariatur a debitis odit officia tempore tenetur,
+      sint iusto voluptatem nostrum dicta provident! Veritatis reprehenderit
+      officiis laboriosam aspernatur! Dolorum rerum voluptas debitis tempore eos
+      corrupti! Quos quasi laborum sed atque libero accusamus! Modi quae
+      assumenda consequatur est deleniti, ipsum optio, sequi aperiam
+      consequuntur delectus blanditiis fugit unde labore expedita fuga
+      repellendus minus omnis praesentium? Voluptatibus, est voluptate dolorem
+      accusamus animi aspernatur eum consequuntur fugiat officiis nulla!
+      Accusantium similique placeat vel adipisci temporibus natus exercitationem
+      labore? Magnam eveniet id dolor ipsam obcaecati inventore quas temporibus.
+      Dolore aut vero enim amet nisi fugit quas asperiores porro doloremque
+      maiores inventore temporibus laborum molestiae minima impedit, illum id ab
+      vitae? Ratione rem eius quis aliquam, hic quas officiis porro
+      reprehenderit qui magni molestias provident nisi dolor, sunt alias
+      dignissimos excepturi recusandae illum, in eaque cumque id quod. Eligendi
+      illum adipisci tenetur, non minima quas blanditiis sed suscipit aliquam
+      tempora! Sed nulla voluptates distinctio quisquam est tenetur optio natus
+      aut! Autem vitae libero qui animi sapiente, doloremque eius eveniet fugit
+      explicabo nesciunt assumenda sunt eaque numquam repellat quae, ipsa ullam
+      nostrum cum aliquam asperiores voluptatum laborum? Commodi ex enim eveniet
+      ab? Quod numquam, suscipit quas provident nobis magnam sit, repellat,
+      alias animi culpa quisquam minus totam nisi nihil inventore voluptate
+      possimus excepturi dicta architecto! Cumque rerum beatae eaque nesciunt
+      quibusdam culpa soluta harum illo nemo et? Commodi rem illum deserunt ab
+      quisquam quia possimus similique explicabo officia magni? Voluptate
+      voluptates rerum doloribus nulla omnis pariatur inventore provident
+      commodi eligendi, dolore repellendus aut sunt quo rem exercitationem
+      officia qui error fuga sit officiis sint? Omnis rem dolore fugit nihil
+      asperiores qui consectetur pariatur, repellendus veniam accusantium
+      voluptates temporibus ducimus cupiditate architecto quod! Dolor sunt,
+    </p>
+
+    <p id="Auto">
+      Overflow:auto <br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nihil
+      quam temporibus id ut? Pariatur a debitis odit officia tempore tenetur,
+      sint iusto voluptatem nostrum dicta provident! Veritatis reprehenderit
+      officiis laboriosam aspernatur! Dolorum rerum voluptas debitis tempore eos
+      corrupti! Quos quasi laborum sed atque libero accusamus! Modi quae
+      assumenda consequatur est deleniti, ipsum optio, sequi aperiam
+      consequuntur delectus blanditiis fugit unde labore expedita fuga
+      repellendus minus omnis praesentium? Voluptatibus, est voluptate dolorem
+      accusamus animi aspernatur eum consequuntur fugiat officiis nulla!
+      Accusantium similique placeat vel adipisci temporibus natus exercitationem
+      labore? Magnam eveniet id dolor ipsam obcaecati inventore quas temporibus.
+      Dolore aut vero enim amet nisi fugit quas asperiores porro doloremque
+      maiores inventore temporibus laborum molestiae minima impedit, illum id ab
+      vitae? Ratione rem eius quis aliquam, hic quas officiis porro
+      reprehenderit qui magni molestias provident nisi dolor, sunt alias
+      dignissimos excepturi recusandae illum, in eaque cumque id quod. Eligendi
+      illum adipisci tenetur, non minima quas blanditiis sed suscipit aliquam
+      tempora! Sed nulla voluptates distinctio quisquam est tenetur optio natus
+      aut! Autem vitae libero qui animi sapiente, doloremque eius eveniet fugit
+      explicabo nesciunt assumenda sunt eaque numquam repellat quae, ipsa ullam
+      nostrum cum aliquam asperiores voluptatum laborum? Commodi ex enim eveniet
+      ab? Quod numquam, suscipit quas provident nobis magnam sit, repellat,
+      alias animi culpa quisquam minus totam nisi nihil inventore voluptate
+      possimus excepturi dicta architecto! Cumque rerum beatae eaque nesciunt
+      quibusdam culpa soluta harum illo nemo et? Commodi rem illum deserunt ab
+      quisquam quia possimus similique explicabo officia magni? Voluptate
+      voluptates rerum doloribus nulla omnis pariatur inventore provident
+      commodi eligendi, dolore repellendus aut sunt quo rem exercitationem
+      officia qui error fuga sit officiis sint? Omnis rem dolore fugit nihil
+      asperiores qui consectetur pariatur, repellendus veniam accusantium
+      voluptates temporibus ducimus cupiditate architecto quod! Dolor sunt,
+    </p>
+  </body>
+</html>

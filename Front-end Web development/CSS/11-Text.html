@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text</title>
+    <style>
+      p {
+        color: blue;
+
+        /* text-align: end; */
+        /* text-align:right; */
+        /*--> end and right both are same*/
+
+        /* by default */
+        /* text-align: start;*/
+        /* text-align: left; */
+        /*--> start and left both are same */
+
+        text-align: center;
+
+        /* text-transform: lowercase; */
+        text-transform: uppercase;
+      }
+      span {
+        text-transform: none;
+      }
+      #ANC {
+        /* text-decoration: underline; */
+        /* text-decoration: underline dashed; */
+        /* text-decoration: underline dotted; */
+        /* text-decoration: underline double; */
+        /* text-decoration: underline wavy; */
+
+        /* text-decoration: overline; */
+        /* text-decoration: overline dashed; */
+        /* text-decoration: overline dotted; */
+        /* text-decoration: overline double; */
+        /* text-decoration: overline wavy; */
+
+        /* text-decoration: line-through ; */
+        /* text-decoration: line-through dashed; */
+        /* text-decoration: line-through dotted; */
+        /* text-decoration: line-through double; */
+        /* text-decoration: line-through wavy; */
+
+        /* ========================================================
+            we can also define color after text-decoration like line no. 46 code.
+           ========================================================*/
+        /* text-decoration: underline black; */
+
+        /* text-decoration: none; */
+
+        text-transform: capitalize;
+      }
+
+      h5 {
+        text-indent: 50px;
+        /* text-indent define first line starting space */
+      }
+
+      /* ==================== 
+            Notes Styles
+        =====================*/
+      .Notes {
+        display: flex;
+        justify-content: center;
+      }
+      .Notes button {
+        border: 2px solid #f305af;
+        border-radius: 5px;
+        /* text-align: center; */
+      }
+      .Notes button a {
+        text-decoration: none;
+        margin: 15px;
+      }
+      .Notes:hover {
+        background-color: lightgreen;
+      }
+      .Notes button:hover {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet <span>consectetur adipisicing</span> elit.
+      Fugit, perspiciatis.
+    </p>
+
+    <a id="ANC" href="#">www.chhotu.com</a>
+
+    <h5 id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae porro eum
+      consectetur, doloribus pariatur accusamus itaque nulla soluta ipsum
+      molestias aut officia qui saepe iusto atque ad numquam est? Maxime?
+    </h5>
+
+    <!-- =====================
+            Notes Structure 
+         =====================-->
+    <div class="Notes">
+      <button>
+        <a
+          href="https://drive.google.com/file/d/1LP1s86CoTZj61ejAq3WP6kBFhP3s8r2B/view"
+          target="_blank"
+          >Click Here to Open Notes</a
+        >
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class&IdSelector</title>
+    <style>
+      * {
+        padding: 10px;
+        margin: 10px;
+      }
+
+      /* ======================= 
+              ID Selector
+         =======================*/
+
+      #UserName {
+        color: red;
+        font-size: 25px;
+      }
+      #DOB {
+        color: rgb(152, 154, 251);
+        border: 4px solid yellowgreen;
+      }
+      #Email {
+        color: chartreuse;
+        height: 20px;
+        width: 200px;
+      }
+
+      /* ======================= 
+              Class Selector
+         =======================*/
+      .FormName {
+        color: aquamarine;
+        font-size: 25px;
+      }
+      .InputName {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset class="FormName">
+        <legend>Contact us!!</legend>
+        <label class="InputName" for="UserName">Enter Your Name: </label>
+        <input type="text" id="UserName" />
+        <br />
+
+        <label class="InputName" for="DOB">DOB: </label>
+        <input type="date" id="DOB" />
+        <br />
+
+        <label class="InputName" for="Email">Email: </label>
+        <input type="email" id="Email" />
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+<!-- ==================================================================
+           Height and width define height and widht of a box.
+      =================================================================-->

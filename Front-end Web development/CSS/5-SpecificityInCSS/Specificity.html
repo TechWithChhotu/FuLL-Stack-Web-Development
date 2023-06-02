@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpecificityInCSS</title>
+    <!-- ============================
+            Link Exteran CSS
+         ============================-->
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      h1 {
+        color: red;
+      }
+      h2 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ==================================================================
+          in h1 tag from inline, internal and external css color applied but inline
+           css color is visible becouse internal and external css color overridden
+         =================================================================-->
+    <h1 style="color: blue">Hello Developer</h1>
+    <!-- ==================================================================
+           in h2 tag from internal and external css color applied but external
+            css color is overridden and inline css color is visible 
+          =================================================================-->
+    <h2>Hello Programmer</h2>
+    <!-- ==================================================================
+        in h3 tag only applied external css thus external css color visible
+       =================================================================-->
+    <h3>Hello Coder</h3>
+  </body>
+</html>

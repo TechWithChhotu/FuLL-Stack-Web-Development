@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float(CSSLayout)</title>
+    <style>
+      /* float:right */
+      .box1 img {
+        float: right;
+      }
+      /* float:left */
+      .box2 p {
+        float: left;
+      }
+
+      /* ==================== 
+             Notes Styles
+         ====================*/
+      .Notes {
+        display: flex;
+        justify-content: center;
+      }
+      .Notes button {
+        border: 2px solid #f305af;
+        border-radius: 5px;
+        /* text-align: center; */
+      }
+      .Notes button a {
+        text-decoration: none;
+        margin: 15px;
+      }
+      .Notes:hover {
+        background-color: lightgreen;
+      }
+      .Notes button:hover {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">
+      <img src="Assets/MyPhoto.png" alt="BAMB" />
+    </div>
+    <div class="box box2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere
+      perspiciatis ipsum et, nostrum laboriosam ullam optio, excepturi dolores
+      aliquam praesentium dolorem repellendus deserunt cum similique nam quaerat
+      neque dolorum laudantium illo eaque. Eaque similique quia dignissimos
+      omnis veritatis, commodi nisi, delectus atque ut illo temporibus
+      consequatur quas dolores soluta!
+    </div>
+
+    <!-- =====================
+             Notes Structure 
+          =====================-->
+    <br />
+    <hr />
+    <div class="Notes">
+      <button>
+        <a
+          href="https://drive.google.com/file/d/1wllDTEsKVLzqu6Snt6lcU8hMJowYrji5/view"
+          target="_blank"
+          >Click Here to Open Notes</a
+        >
+      </button>
+    </div>
+  </body>
+</html>

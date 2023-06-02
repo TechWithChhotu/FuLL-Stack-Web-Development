@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bring in font</title>
+
+    <!-- ====================================================================================
+        How do you include external fonts and apply them?
+        Steps: -
+        1. Go browser and search fonts --recomendation search google fonts-- 
+        2. Choice font according to user choice
+        3. Copy font CDN(content delivery network)
+        4. In your HTML file inside head tag using link tag and paste font CDN inside link tag.
+        5. Copy font-family and paste in css. And font will be applied.
+        ====================================================================================-->
+
+    <!-- ========================================
+               Link external fonts, font name is Tangerine
+             ========================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Kanit&family=Nunito&family=Tangerine:wght@700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      p {
+        /* font-family: "DynaPuff", cursive; */
+        /* font-family: "Kanit", sans-serif; */
+        /* font-family: "Nunito", sans-serif; */
+        font-family: "Tangerine", cursive;
+        /* font-family: "Varela Round", sans-serif; */
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+      temporibus quisquam sunt ipsam! Alias cupiditate ex laborum sint delectus
+      quos consequuntur nisi fugit, commodi rem distinctio deserunt odit, odio
+      consectetur.
+    </p>
+  </body>
+</html>

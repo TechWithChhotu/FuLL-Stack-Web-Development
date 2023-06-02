@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin and Padding</title>
+    <!-- ==================================================================
+        Margin-> margins are used to create space outside of the element border.
+         We can set all side margin at a time and we can also set individual 
+         sides(top, right, bottom, left).
+
+        padding-> padding are used to create space inside of the element border.
+         We can set all side padding at a time and we can also set individual
+         sides(top, right, bottom, left).
+        =================================================================-->
+    <style>
+      body {
+        border: 2px solid yellowgreen;
+
+        margin: 100px;
+      }
+      p {
+        height: 100px;
+        width: 100px;
+        background-color: #7fffd4;
+        color: #6e07f5;
+        border: 2px solid rgb(205, 50, 112);
+
+        padding: 50px;
+      }
+      h3 {
+        height: 100px;
+        width: 100px;
+        background-color: #a6fa1f;
+        color: #6e07f5;
+        border: 2px solid rgb(205, 50, 112);
+
+        /* padding: top right bottom left; */
+        padding: 50px 40px 60px 30px;
+
+        /* margin: top right bottom left; */
+        margin: 10px 40px 20px 50px;
+      }
+      h4 {
+        height: 100px;
+        width: 100px;
+        background-color: #a6fa1f;
+        color: #6e07f5;
+        border: 2px solid rgb(205, 50, 112);
+
+        padding-top: 50px;
+        padding-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 40px;
+
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        margin-right: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello</p>
+    <h3>Hello</h3>
+    <h4>Hello</h4>
+  </body>
+</html>

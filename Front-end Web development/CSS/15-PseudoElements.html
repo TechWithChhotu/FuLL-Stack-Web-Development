@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PseudoElements</title>
+    <!-- ============================
+           mostly used pseudo element selector:
+           ~    first-line
+           ~    first-letter
+           ~    after
+           ~    before
+           ~    marker
+           ~    selection
+         ============================-->
+    <style>
+      /* first-letter */
+      #para1::first-letter {
+        color: red;
+        font-size: xx-large;
+        font-weight: 700;
+        line-height: 0.4;
+      }
+
+      /* first-line */
+      #para2::first-line {
+        color: rgb(58, 7, 240);
+        font-size: 20px;
+        font-weight: 900;
+      }
+
+      /* after */
+      #para2::after {
+        /* content is compulsory to right if not any content then only "" mention compulsory in after and befor selector*/
+        content: "_Chhotu Kumar";
+        color: yellowgreen;
+      }
+
+      /* befor */
+      #para2::before {
+        /* content is compulsory to right if not any content then only "" mention compulsory in after and befor selector*/
+        content: "Lorem@: ";
+        color: rgb(205, 50, 197);
+      }
+
+      /* selection */
+      #para2::selection {
+        background-color: black;
+        color: yellow;
+      }
+
+      /* ==================== 
+             Notes Styles
+         ====================*/
+      .Notes {
+        display: flex;
+        justify-content: center;
+      }
+      .Notes button {
+        border: 2px solid #f305af;
+        border-radius: 5px;
+        /* text-align: center; */
+      }
+      .Notes button a {
+        text-decoration: none;
+        margin: 15px;
+      }
+      .Notes:hover {
+        background-color: lightgreen;
+      }
+      .Notes button:hover {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="para1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      accusantium sequi dignissimos necessitatibus ut odio vero placeat est
+      officiis, temporibus quia deserunt eum a consequatur ipsam voluptatum ab
+      pariatur distinctio fugiat harum nam. Totam nemo nisi in architecto
+      dolore! Voluptatibus soluta corporis quidem deserunt repudiandae, fuga
+      assumenda repellat cupiditate velit.
+    </p>
+
+    <p id="para2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      accusantium sequi dignissimos necessitatibus ut odio vero placeat est
+      officiis, temporibus quia deserunt eum a consequatur ipsam voluptatum ab
+      pariatur distinctio fugiat harum nam. Totam nemo nisi in architecto
+      dolore! Voluptatibus soluta corporis quidem deserunt repudiandae, fuga
+      assumenda repellat cupiditate velit.
+    </p>
+
+    <!-- =====================
+             Notes Structure 
+          =====================-->
+    <br /><br />
+    <hr />
+    <div class="Notes">
+      <button>
+        <a
+          href="https://drive.google.com/file/d/1Z4-beiRCb3lOEV-QDV0tLb8xE6jIFzR3/view"
+          target="_blank"
+          >Click Here to Open Notes</a
+        >
+      </button>
+    </div>
+  </body>
+</html>

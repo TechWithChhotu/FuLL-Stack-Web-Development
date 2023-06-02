@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      /* ========================================================
+              grid-template-column: The grid-template-columns property defines the number
+               of columns in your grid layout, and it can define the width of each column.
+
+              The value is a space-separated-list, where each value defines the
+              width of the respective column.
+
+              If you want your grid layout to contain 5 columns, specify the width of
+              the 5 columns, or "auto" if all columns should have the same width.
+         ========================================================*/
+
+      /* ========================================================
+                 grid-template-raws: The grid-template-rows property defines the height of each row. It is used to define the number of rows and their size in a grid container.
+         ========================================================*/
+
+      /* ========================================================
+              fr units: The "fr" unit in CSS is a way to divide up the available
+              space in a grid or layout. It is used to specify how much of the
+              space should be given to a certain element or group of elements.
+              It represents a fraction of the available space.
+        ========================================================*/
+      .Container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px 100px;
+        gap: 10px;
+      }
+
+      .box1 {
+        background-color: rgb(249, 2, 199);
+      }
+      .box2 {
+        background-color: rgb(17, 0, 255);
+      }
+      .box3 {
+        background-color: rgb(255, 0, 0);
+        text-overflow: ellipsis;
+      }
+
+      /* ========================================================
+        repeat(): The repeat() function is used to reduce repetitive declarations.
+        ========================================================*/
+      .Container2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 100px 100px;
+        gap: 10px;
+      }
+
+      /* ========================================================
+        minmax(): The minmax() function in CSS is used to set a range of values for a property. It sets a minimum and maximum value for a property.
+        ========================================================*/
+      .Container3 {
+        display: grid;
+        grid-template-columns: minmax(100px, 1fr) minmax(100px, 2fr) minmax(
+            100px,
+            1fr
+          );
+        grid-template-rows: 100px 100px 100px;
+        gap: 10px;
+      }
+
+      /* ====================
+             Notes Styles
+         ====================*/
+      .Notes {
+        display: flex;
+        justify-content: center;
+      }
+      .Notes button {
+        border: 2px solid #f305af;
+        border-radius: 5px;
+        /* text-align: center; */
+      }
+      .Notes button a {
+        text-decoration: none;
+        margin: 15px;
+      }
+      .Notes:hover {
+        background-color: lightgreen;
+      }
+      .Notes button:hover {
+        background-color: lightblue;
+      }
+
+      input::placeholder {
+        /* color: transparent; */
+        display: none;
+        vertical-align: ;
+        /* visibility: hidden; */
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows:
+      100px 100px 100px;
+    </h3>
+    <div class="Container">
+      <div class="box1">box-1</div>
+      <div class="box2">box-2</div>
+      <div class="box3">box-3</div>
+      <div class="box1">box-4</div>
+      <div class="box2">box-5</div>
+      <div class="box3">box-6</div>
+      <div class="box1">box-7</div>
+      <div class="box2">box-8</div>
+      <div class="box3">
+        box-9ksljafhlaksdjdflsadjflasdjflasjfaslfjlsafjalskjflasjf9ksljafhlaksdjdflsadjflasdjflasjfaslfjlsafjalskjflasjf
+      </div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <h3>grid-template-columns: repeat(3, 1fr);</h3>
+    <div class="Container2">
+      <div class="box1">box-1</div>
+      <div class="box2">box-2</div>
+      <div class="box3">box-3</div>
+      <div class="box1">box-4</div>
+      <div class="box2">box-5</div>
+      <div class="box3">box-6</div>
+      <div class="box1">box-7</div>
+      <div class="box2">box-8</div>
+      <div class="box3">box-9</div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <h3>
+      grid-template-columns: minmax(100px, 1fr) minmax(100px, 2fr) minmax(
+      100px, 1fr );
+    </h3>
+    <div class="Container3">
+      <div class="box1">box-1</div>
+      <div class="box2">box-2</div>
+      <div class="box3">box-3</div>
+      <div class="box1">box-4</div>
+      <div class="box2">box-5</div>
+      <div class="box3">box-6</div>
+      <div class="box1">box-7</div>
+      <div class="box2">box-8</div>
+      <div class="box3">box-9</div>
+    </div>
+
+    <!-- =====================
+            Notes Structure 
+         =====================-->
+    <br /><br />
+    <hr />
+    <div class="Notes">
+      <button>
+        <a
+          href="https://drive.google.com/file/d/1x-VXS6mUBRHemyMkpIKJXN5qqB5g66p8/view"
+          target="_blank"
+          >Click Here to Open Notes</a
+        >
+        <a
+          href="https://drive.google.com/file/d/1dsBmJKure_5brhspkltU7rFOFEwHMl93/view"
+          target="_blank"
+          >Click Here to Open Notes</a
+        >
+      </button>
+    </div>
+
+    <input
+      type="text"
+      placeholder="OKKK"
+      id="Ck" />
+  </body>
+</html>
